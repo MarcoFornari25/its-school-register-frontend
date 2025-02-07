@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background: linear-gradient(to bottom, rgba(161, 150, 165, 0.7), rgba(113, 49, 131, 0.5)),  url("https://upload.wikimedia.org/wikipedia/commons/5/50/Black_Wallpaper.jpg");
+    height: 100vh;
+ 
+}
+
