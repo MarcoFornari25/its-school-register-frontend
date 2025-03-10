@@ -1,47 +1,44 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro Elettronico</title>
     <link rel="stylesheet" href="signin.css">
 </head>
-
 <body>
-
-    <div class="login-box">
-        <h2>Sign In <span style="font-size:20px; padding-left: 10px;">&#128187;</span></h2>
-        <form>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Inserisci email" required>
-
-            <div class="pwd">
-                <label for="password">Password:</label>
+    <div class="container"> 
+        <div class="container"> 
+            <div class="login-box">
+                <h2>Sign In <span style="font-size:20px; padding-left: 10px;">&#128187;</span></h2>
+                <form onsubmit="return valida()">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Inserisci email" required>
+    
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Inserisci Password" name="password" required>
+    
+                    <label for="showPassword">
+                        <input type="checkbox" id="showPassword" onclick="togglePassword()"> Mostra la password
+                    </label>
+    
+                    <button type="submit">Accedi</button>
+                </form>
             </div>
+        </div>
 
-            <div class="password-container">
-                <input type="password" id="password" placeholder="Inserisci password" maxlength="12" required>
-                <span class="toggle-password" onclick="showPwd()"></span>
-            </div>    
-
-            <button type="submit" onclick="valida()">Sign In</button>
-
-
-        </form>
-    </div>
-
-    <!-- /*immagini soci*/ -->
-    <div class="soci">
-
-        <img src="https://icsrovellasca.edu.it/wp-content/uploads/2024/09/ita-estate.jpg" alt="Coesione Italia 21-27">
-        <img src="https://www.indire.it/wp-content/uploads/2023/03/IT-Cofinanziato-dallUnione-europea_POS-scaled.jpg"
-            alt="Confinanziato dall'Unione Europea">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Emblem_of_Italy.svg/1200px-Emblem_of_Italy.svg.png"
-            alt="Repubblica Italiana">
-        <img src="https://www.comune.osimo.an.it/wp-content/uploads/2020/11/Schermata-2020-11-03-alle-15.44.06.png"
-            alt="Regione Marche">
+        <div class="soci">
+            <img src="https://icsrovellasca.edu.it/wp-content/uploads/2024/09/ita-estate.jpg" alt="Coesione Italia 21-27">
+            <img src="https://www.indire.it/wp-content/uploads/2023/03/IT-Cofinanziato-dallUnione-europea_POS-scaled.jpg"
+                alt="Confinanziato dall'Unione Europea">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Emblem_of_Italy.svg/1200px-Emblem_of_Italy.svg.png"
+                alt="Repubblica Italiana">
+            <img src="https://www.comune.osimo.an.it/wp-content/uploads/2020/11/Schermata-2020-11-03-alle-15.44.06.png"
+                alt="Regione Marche">
+        </div>
 
     </div>
-
+    <script src="signin.js"></script>
 </body>
-
 </html>

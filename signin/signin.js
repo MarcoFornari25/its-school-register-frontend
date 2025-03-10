@@ -4,19 +4,25 @@ function valida(){
     let password = document.getElementById("password").value;
 
     if(email === "marco.fornari@itssmartacademy.it" && password === "1234"){
-        console.log("giusto");
+         window.location.href = "its-school-register-frontend/teacherPage/teacher-page.html";
+         console.log("giusto");
+        return false;
+  
     }
     else{
         console.log("sbagliato");
+        return false;
     }
 }
 
-//funzione per mostrare pwd
-function showPwd(){
-    let show = document.getElementById("password");
-    if(show.type === "password"){
-        show.type = "text"
+function togglePassword() {
+    var passwordField = document.getElementById("password");
+    var checkbox = document.getElementById("showPassword");
+
+//mostrare o nascondere pwd
+    if (checkbox.checked) {
+        passwordField.type = "text"; 
     } else {
-        show.type = "password"
+        passwordField.type = "password"; 
     }
 }

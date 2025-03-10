@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="it">
 
 <head>
@@ -12,4 +12,83 @@
 <body>
     <ul id="lista"></ul>
 </body>
+ -->
 
+ <!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class Register</title>
+  <link rel="stylesheet" href="teacher-page.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Class Register</h1>
+    <div class="nav">
+      <button class="active" data-section="classes">Classes</button>
+      <button data-section="students">Students</button>
+      <button data-section="lessons">Lessons</button>
+      <button data-section="attendance">Attendance</button>
+    </div>
+
+    <!-- Class Section -->
+    <div class="class-section section active">
+      <h2>Classes</h2>
+      <div class="form-group">
+        <label for="class-name">Class Name:</label>
+        <input type="text" id="class-name" placeholder="Enter class name" />
+        <button id="add-class">Add Class</button>
+      </div>
+      <div class="class-list">
+        <h3>Class List</h3>
+        <ul id="class-list"></ul>
+      </div>
+    </div>
+
+    <!-- Student  -->
+    <div class="student-section section">
+      <h2>Students</h2>
+      <div class="form-group">
+        <label for="student-name">Student Name:</label>
+        <input type="text" id="student-name" placeholder="Enter student name" />
+        <button id="add-student">Add Student</button>
+      </div>
+      <div class="student-list">
+        <h3>Student List</h3>
+        <ul id="student-list"></ul>
+      </div>
+    </div>
+
+    <!-- Lesson  -->
+    <div class="lesson-section section">
+      <h2>Lessons</h2>
+      <div class="form-group">
+        <label for="lesson-name">Lesson Name:</label>
+        <input type="text" id="lesson-name" placeholder="Enter lesson name" />
+        <button id="add-lesson">Add Lesson</button>
+      </div>
+      <div class="lesson-list">
+        <h3>Lesson List</h3>
+        <ul id="lesson-list"></ul>
+      </div>
+    </div>
+
+    <!-- Attendance  -->
+    <div class="attendance-section section">
+      <h2>Attendance</h2>
+      <div class="form-group">
+        <label for="attendance-date">Date:</label>
+        <input type="date" id="attendance-date" />
+        <button id="mark-attendance">Mark Attendance</button>
+      </div>
+      <div class="attendance-list">
+        <h3>Attendance List</h3>
+        <ul id="attendance-list"></ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="lesson.js"></script>
+</body>
+</html>

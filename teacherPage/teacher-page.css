@@ -1,12 +1,152 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
 
 }
 
 body {
-    background: linear-gradient(to bottom, rgba(161, 150, 165, 0.7), rgba(113, 49, 131, 0.5)),  url("https://upload.wikimedia.org/wikipedia/commons/5/50/Black_Wallpaper.jpg");
+    background: linear-gradient(to bottom, rgba(161, 150, 165, 0.7), rgba(23, 154, 71, 0.5)),  url("https://upload.wikimedia.org/wikipedia/commons/5/50/Black_Wallpaper.jpg");
     height: 100vh;
  
 }
+ */
 
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom, rgba(161, 150, 165, 0.7), rgba(23, 154, 71, 0.5));
+padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100;
+    text-align: center;
+}
+
+.container {
+    max-width: 1700px;
+    min-height: 100px; 
+    width: 100%;
+    margin: 20px;
+    background: #2b4e35;
+    padding: 30px;
+    border-radius: 15px;
+   
+}
+
+h1 {
+    color: #f7f7f7;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #f7f7f7;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #f7f7f7;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+label{
+    color: white;
+}
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    background: #d1e7dd;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.nav button {
+    background: #8e237e;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.nav button:hover {
+    background: #5b9e15;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+input,
+button {
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+input {
+    
+    width: 70%;
+    border: 1px solid #6b8e23;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3b5c27;
+}
+
+button {
+    background: #4c6a2b;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background: #4c6a2b;
+}
+
+.class-list,
+.student-list,
+.lesson-list,
+.attendance-list {
+    margin-top: 30px;
+}
+
+.class-item,
+.student-item,
+.lesson-item,
+.attendance-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.delete-btn {
+    background: #d9534f;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.delete-btn:hover {
+    background: #c9302c;
+}
+
+    
