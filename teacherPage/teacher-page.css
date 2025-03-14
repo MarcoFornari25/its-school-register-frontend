@@ -1,101 +1,83 @@
-/* * {
-    margin: 0;
+@font-face {
+    font-family: Apple;
+    src: url("Fonts/sf-pro-display_regular.ttf");
+}
+
+* {
     padding: 0;
-
-}
-
-body {
-    background: linear-gradient(to bottom, rgba(161, 150, 165, 0.7), rgba(23, 154, 71, 0.5)),  url("https://upload.wikimedia.org/wikipedia/commons/5/50/Black_Wallpaper.jpg");
-    height: 100vh;
- 
-}
- */
-
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to bottom, rgba(161, 150, 165, 0.7), rgba(23, 154, 71, 0.5));
-padding: 0;
     margin: 0;
+    font-family: Apple, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f5f7;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100;
+    height: 760px;
     text-align: center;
 }
 
 .container {
-    max-width: 1700px;
-    min-height: 100px; 
-    width: 100%;
-    margin: 20px;
-    background: #2b4e35;
-    padding: 30px;
-    border-radius: 15px;
-   
+    
+    width: 100vw;
+    height: 110vh;
+    background: linear-gradient(to bottom, rgba(161, 150, 165, 0.7), rgba(23, 154, 71, 0.5));
+    padding: 48px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    color: #f7f7f7;
-    font-size: 32px;
-    margin-bottom: 20px;
+h1, h2, h3 {
+    color: #1d1d1f;
+    margin-bottom:  20px;
 }
 
-h2 {
-    color: #f7f7f7;
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-h3 {
-    color: #f7f7f7;
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
-label{
-    color: white;
-}
 .nav {
     display: flex;
-    justify-content: space-evenly;
-    padding: 10px;
-    background: #d1e7dd;
-    border-radius: 20px;
-    margin-bottom: 25px;
+    justify-content: center;
+    gap: 100px;
+    background: #1d1d1f;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .nav button {
-    background: #8e237e;
-    color: white;
+    background: none;
     border: none;
-    padding: 12px 24px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
     cursor: pointer;
-    border-radius: 10px;
-    font-size: 16px;
+    padding: 10px;
+    transition: color 0.3s;
 }
 
-.nav button:hover {
-    background: #5b9e15;
+.nav button:hover, .nav button.active {
+    color: white;
 }
 
 .section {
     display: none;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .section.active {
     display: block;
 }
 
-input,
-button {
-    padding: 12px 24px;
+input, button {
+    padding: 12px 20px;
     border-radius: 10px;
     font-size: 16px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
 }
 
 input {
-    
     width: 70%;
     border: 1px solid #6b8e23;
 }
@@ -106,26 +88,21 @@ input:focus {
 }
 
 button {
-    background: #4c6a2b;
+    background: #0071e3;
     color: white;
     border: none;
+    cursor: pointer;
 }
 
 button:hover {
-    background: #4c6a2b;
+    background: #005bb5;
 }
 
-.class-list,
-.student-list,
-.lesson-list,
-.attendance-list {
-    margin-top: 30px;
+.class-list, .student-list, .lesson-list, .attendance-list {
+    margin-top: 20px;
 }
 
-.class-item,
-.student-item,
-.lesson-item,
-.attendance-item {
+.class-item, .student-item, .lesson-item, .attendance-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -143,10 +120,9 @@ button:hover {
     padding: 8px 16px;
     cursor: pointer;
     border-radius: 8px;
+
 }
 
 .delete-btn:hover {
     background: #c9302c;
 }
-
-    
