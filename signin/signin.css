@@ -22,7 +22,10 @@ body {
     width: 300px;
     color: white;
     text-align: center;
-    margin-left: 300px;
+    position: absolute;
+    top: 51%;
+    left: 65%;
+    transform: translate(-50%, -50%);
 }
 
 .login-box label {
@@ -74,4 +77,86 @@ body {
     align-items: center;
 }
 
+/* text animation */
 
+    .content {
+        position: absolute;
+        top: 32%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+        height: 160px;
+        overflow: hidden;
+        font-family: 'Lato', sans-serif;
+        font-size: 35px;
+        line-height: 40px;
+        color: #ecf0f1;
+    }
+
+    .content__container {
+        font-weight: 600;
+        overflow: hidden;
+        height: 40px;
+        padding: 0 40px;
+        position: relative;
+    }
+
+    .content__container::before {
+        content: '[';
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #16a085;
+        font-size: 42px;
+        line-height: 40px;
+        animation: opacity 2s infinite;
+    }
+
+    .content__container::after {
+        content: ']';
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #16a085;
+        font-size: 42px;
+        line-height: 40px;
+        animation: opacity 2s infinite;
+    }
+
+    .content__container__text {
+        display: inline;
+        float: left;
+        margin: 0;
+    }
+
+    .content__container__list {
+        margin-top: 0;
+        padding-left: 110px;
+        text-align: left;
+        list-style: none;
+        animation: change 24s infinite; /* tempo aumentato per 12 step */
+    }
+
+    .content__container__list__item {
+        line-height: 40px;
+        margin: 0;
+    }
+
+    @keyframes opacity {
+        0%, 100% { opacity: 0; }
+        50% { opacity: 1; }
+    }
+    @keyframes change {
+        0%      { transform: translateY(0); }
+        8.33%   { transform: translateY(-40px); }
+        16.66%  { transform: translateY(-80px); }
+        25%     { transform: translateY(-120px); }
+        33.33%  { transform: translateY(-160px); }
+        41.66%  { transform: translateY(-200px); }
+        50%     { transform: translateY(-240px); }
+        58.33%  { transform: translateY(-280px); }
+        66.66%  { transform: translateY(-320px); }
+        75%     { transform: translateY(-360px); }
+        83.33%  { transform: translateY(-400px); }
+        91.66%  { transform: translateY(-440px); }
+        100%    { transform: translateY(0); }
+    }
