@@ -7,8 +7,11 @@
 
 body {
     height: 100vh;
-    background: linear-gradient(to bottom, rgba(161, 150, 165, 0.7), rgba(23, 154, 71, 0.5)), url("file:///Users/macu/Desktop/register/its-school-register-frontend/signin/its.png") no-repeat center center fixed;
+    background: linear-gradient(to bottom, rgba(161, 150, 165, 0.7), rgba(23, 154, 71, 0.5)), url("file:///Users/macu/Desktop/register/its-school-register-frontend/signin/its.png");
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment:scroll, fixed;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;

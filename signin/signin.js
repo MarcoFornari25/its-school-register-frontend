@@ -98,14 +98,18 @@ async function valida(event) {
   try {
     const isLoginSuccessful = await apiClient.login(email, password);
     if (isLoginSuccessful) {
-      console.log("Giusto");
-      window.location.href = "../teacherpage/index.html";
-      console.log("Sbagliato");
+      console.log("Login riuscito");
+      window.location.href = "../teacherPage/index.html";
+    } else {
+      console.log("Login fallito");
+      alert("Email o password errati.");
     }
   } catch (error) {
     console.error("Errore durante il login:", error);
+    alert("Errore durante il login. Riprova più tardi.");
   }
 }
+
 //cursor 
 const cursor = document.querySelector('.cursor');
 
