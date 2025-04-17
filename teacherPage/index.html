@@ -1,36 +1,27 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="it">
 
-<head>
-    <title>Teacher Page</title>
-    <link rel="stylesheet" href="teacher-page.css">
-    <script src="lesson.js"></script>
-</head>
-
-
-
-<body>
-    <ul id="lista"></ul>
-</body>
- -->
-
- <!DOCTYPE html>
-<html lang="it">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Class Register</title>
-  <link rel="stylesheet" href="teacher-page.css"/>
+  <title>Registro Elettronico</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="container">
-    <h1>Class Register</h1>
+    <h1>Teacher Section</h1>
+
     <div class="nav">
-      <button class="active" data-section="classes">Classes</button>
-      <button data-section="students">Students</button>
-      <button data-section="lessons">Lessons</button>
-      <button data-section="attendance">Attendance</button>
+      <button class="active" data-section="class">CLASSES</button>
+      <button data-section="student">STUDENTS</button>
+      <button data-section="lesson">LESSONS</button>
+      <button data-section="attendance">ATTENDANCE</button>
     </div>
+
+
+    <!-- cursor -->
+    <div class="cursor"></div>
 
     <!-- Class Section -->
     <div class="class-section section active">
@@ -91,4 +82,5 @@
 
   <script src="lesson.js"></script>
 </body>
+
 </html>
